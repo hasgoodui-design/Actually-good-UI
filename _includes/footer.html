@@ -1,0 +1,28 @@
+<footer>
+  <div class="grid-child">
+    <h4>About</h4>
+    <p>
+      This page lists sites, services and similar with actual good UI design that other people could/should check out.<br>
+      Made and maintained by <a href="https://andre601.ch" target="_blank" rel="nofollow noopener noreferrer">Andre_601</a>.
+    </p>
+    <p>
+      Website made using <a href="https://jekyllrb.com" target="_blank" rel="nofollow noopener noreferrer">Jekyll</a> and the <a href="" target="_blank" rel="nofollow noopener noreferrer">Jekyll Timelines theme</a>.
+    </p>
+  </div>
+  <div class="grid-child">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://github.com/Andre601/Discord-Bad-UI" target="_blank" rel="nofollow noopener noreferrer">Source Code</a></li>
+      <li><a href="https://github.com/Andre601/Discord-Bad-UI/issues" target="_blank" rel="nofollow noopener noreferrer">Submit an entry</a></li>
+    </ul>
+  </div>
+  <div class="grid-child">
+    <h4>Tags</h4>
+    {% include tags-list.html %}
+    <ul>
+    {% for tag in tags %}
+      <li><a href="{{ site.baseurl }}/tags/{{ tag }}">#{{ tag }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+</footer>
