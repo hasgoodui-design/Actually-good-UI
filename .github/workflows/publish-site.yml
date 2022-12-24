@@ -1,0 +1,26 @@
+name: Deploy to gh-pages
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '.github/workflows/publish-site.yml'
+      - 'site/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          cname: actually.hasgoodui.design
+          enable_jekyll: true

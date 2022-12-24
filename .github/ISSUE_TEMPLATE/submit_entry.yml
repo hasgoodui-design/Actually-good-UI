@@ -1,0 +1,34 @@
+name: Submit a new good UI design
+description: Use this template to submit a new site/service/software/... with actually good UI design.
+
+assignees:
+  - Andre601
+
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        ## Welcome!
+        You can use this issue form to submit new Sites, services, software, etc. with good UI designs.  
+        Please only submit **one entry per issue**.
+  - type: input
+    attributes:
+      label: Domain/Name
+      description: 'The domain of the site or name of the service/software/...'
+      placeholder: 'example.com'
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: 'A small, simple description of the site and its good design decisions.'
+      placeholder: 'example.com is a site that ...'
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Name
+      description: Provide a name here that should be mentioned in `Submitted by <name>`
+      placeholder: 'User'
+    validations:
+      required: true
