@@ -13,6 +13,9 @@ collections:
   tags:
     title: Tags
     output: true
+  authors:
+    title: Authors
+    output: false
 defaults:
 - scope:
     path: ''
@@ -29,3 +32,10 @@ url: https://actually.hasgoodui.design
 color: "#0d1117"
 
 github-repo: 'Actually-good-UI'
+
+footer-description: Website listing some actual good UI designs made by other sites, services and alike.
+
+plugins:
+  - github-pages
+  - jekyll-octicons
+  - tzinfo-data
