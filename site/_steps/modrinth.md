@@ -11,3 +11,5 @@ tags:
 The site offers a modern UI with dark-theme and mobile support.
 
 ![frontpage](/assets/images/modrinth/frontpage.png) ![mods-list](/assets/images/modrinth/mods-list.png)
+
+[modrinth]: https://modrinth.com
