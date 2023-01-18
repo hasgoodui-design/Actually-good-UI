@@ -1,5 +1,5 @@
 ---
-title: Modrinth.com
+title: Minimal Mistakes
 date: 2023-01-18 00:00:00 0000
 submitter: Andre601
 tags:
