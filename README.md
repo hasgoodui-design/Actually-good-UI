@@ -6,9 +6,13 @@ This Repository hosts the content of [`actually.hasgoodui.design`][website], whi
 The [issue tracker][issues] is used for submitting entries.
 
 ## Credits
-This page uses the [Jekyll-timeline theme][theme] from [lukas-h]. Smaller modifications have been made to the design, but it is otherwise the same.
 
+- Page build using [Jekyll][jekyll] and the [Jekyll Timeline Theme][theme]
+- SVG icons used from [GitHub's Octicons][octicons]
+
+[website]: https://actually.hasgoodui.design
 [issues]: https://github.com/hasgoodui-design/Actually-good-UI/issues
+[we-are]: https://we-are.hasgoodui.design
+[jekyll]: https://jekyllrb.com/
 [theme]: https://github.com/lukas-h/jekyll-timeline
-[lukas-h]: https://github.com/lukas-h
-[tigg]: https://twitterisgoinggreat.com
+[octicons]: https://primer.style/octicons
