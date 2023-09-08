@@ -3,11 +3,13 @@ name: Deploy to gh-pages
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - '.github/workflows/publish-site.yml'
-      - 'site/**'
-  workflow_dispatch:
+      - 'docs/**'
+      - 'override/**'
+      - 'requirements.txt'
+      - 'mkdocs.yml'
 
 jobs:
   deploy:
@@ -18,10 +20,14 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python_version: 3.x
+      - run: pip install -r requirements.txt
+      - run: mkdocs build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
           cname: actually.hasgoodui.design
-          enable_jekyll: true
