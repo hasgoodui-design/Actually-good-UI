@@ -7,12 +7,9 @@ The [issue tracker][issues] is used for submitting entries.
 
 ## Credits
 
-- Page build using [Jekyll][jekyll] and the [Jekyll Timeline Theme][theme]
-- SVG icons used from [GitHub's Octicons][octicons]
+- Page build using [MkDocs][mkdocs] and the [Material for MkDocs theme][theme]
 
 [website]: https://actually.hasgoodui.design
 [issues]: https://github.com/hasgoodui-design/Actually-good-UI/issues
-[we-are]: https://we-are.hasgoodui.design
-[jekyll]: https://jekyllrb.com/
-[theme]: https://github.com/lukas-h/jekyll-timeline
-[octicons]: https://primer.style/octicons
+[mkdocs]: https://www.mkdocs.org
+[theme]: https://squidfunk.github.io/mkdocs-material
