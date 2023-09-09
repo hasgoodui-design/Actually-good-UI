@@ -8,6 +8,7 @@ tags:
   - documentation
   - jekyll
   - jekyll-theme
+submitter: Andre601
 ---
 
 [Minimal Mistakes][mmistakes]{ target="_blank" rel="nofollow noopener noreferral" } is a [Jekyll Theme][jekyll]{ target="_blank" rel="nofollow noopener noreferral" } created and maintained by [Michael Rose][michael]{ target="_blank" rel="nofollow noopener noreferral" }.<br>
